@@ -1,0 +1,89 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #101010;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #ffffff;
+  word-break: break-word;
+}
+// Стандартные стили заголовков и текста
+h1, h2, h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+// Списки
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+// Ссылки
+a {
+  text-decoration: none;
+}
+// Кнопки
+button {
+  border: 0;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+// Спрятанные элементы
+.visually-hidden {
+visibility: hidden;
+margin: 0;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+-webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+.green-title {
+  color: #0A9A67;
+}
+.content-container {
+  @media (min-width: $tablet) {
+    padding: 0 50px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 190px;
+  }
+  @media (min-width: $desktop-hight) {
+    padding: 0 300px;
+  }
+}
+// Секционные заголовки
+.section-title {
+  font-size: 22px;
+  line-height: 1.27;
+  @media (min-width: $mobile-hight) {
+    font-size: 34px;
+    line-height: 1.29;
+  }
+  @media (min-width: $desktop) {
+  font-size: 36px;
+  line-height: 1.3;
+  }
+}
+.mobile-trasfer {
+  display: block;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}

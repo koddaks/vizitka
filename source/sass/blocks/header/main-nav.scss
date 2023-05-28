@@ -1,0 +1,120 @@
+.main-nav {
+  width: 100%;
+  min-height: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+ @media (min-width: $tablet) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+          gap: 40px;
+}
+@media (min-width: $desktop) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          gap: 200px;
+}
+}
+// Logo
+
+// Кнопка меню
+.main-nav__toggle {
+  width: 60px;
+    height: 60px;
+    margin: 0;
+    position: absolute;
+    top: 13%;
+    right: 12%;
+    border: 0;
+    cursor: pointer;
+    background-color: #242424;
+@media (min-width: $tablet) {
+  display: none;
+  }
+  @media (min-width: $desktop) {
+    display: none;
+    }
+}
+.main-nav__toggle::after body {
+background-color: black;
+}
+// Меню
+.main-nav__wrapper {
+  width: 100%;
+min-height: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+font-size: 20px;
+line-height: 23px;
+@media (min-width: $tablet) {
+  max-width: 100%;
+  min-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: $desktop) {
+  width: 60%;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+      align-items: end;
+}
+@media (min-width: $desktop-hight) {
+  width: 55%;
+}
+}
+// Отступ у первой ссылки
+.main-nav__link:first-child {
+  @media (max-width: $mobile-width-only) {
+    padding: 36px 0 0;
+  }
+}
+.nav-list {
+margin: 0;
+padding: 0;
+@media (min-width: $tablet){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+}
+.main-nav__link {
+display: block;
+font-weight: 400;
+color: #ffffff;
+text-align: start;
+font-size: 24px;
+line-height: 1.29;
+@media (min-width: $tablet) {
+font-size: 14px;
+line-height: 1.28;
+}
+@media (min-width: $desktop) {
+font-size: 16px;
+line-height: 1.31;
+}
+&:hover {
+  color: #0a9a67;
+}
+&:active {
+  opacity: 0.5;
+}
+}
