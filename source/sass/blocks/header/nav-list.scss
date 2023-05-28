@@ -25,13 +25,13 @@
   }
      @media (max-width: $mobile-width-only) {
      .nav-list--opened {
-      width: 320px;
+      width: 100%;
       min-height: 500px;
       padding: 0;
       position: absolute;
       background-color: #101010;
       top: 76px;
-      right: 20px;
+      right: 0;
      }
      .nav-list--closed {
       display: none;

@@ -87,3 +87,23 @@ overflow: hidden;
     display: block;
   }
 }
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  // @media (min-width: $mobile-hight) {
+  //   padding: 0 20px;
+  // }
+  @media (min-width: $tablet) {
+    padding: 0 50px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 135px;
+  }
+  @media (min-width: $desktop-hight) {
+    padding: 0 310px;
+  }
+}
